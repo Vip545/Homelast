@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styles.css">
+    <script src="./scripts/script.js" defer></script>
+    <title>Главная</title>
+</head>
+<body>
+    <header class="header">
+        <div class="burger">
+            <span class="burger__line burger_line1"></span>
+            <span class="burger__line burger_line2"></span>
+            <span class="burger__line burger_line3"></span>
+        </div>  
+        <a class="logo" href="./index.html">
+            <img src="./img/logo.svg" alt="Логотип университета Иннополис">
+        </a>
+        <nav>
+            <ul class="menu">
+                <li class="menu__list">
+                    <a class="menu__link" href="./index.html">Главная</a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./student.html">Студенты</a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./about.html">О курсе</a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link menu__link__active" href="./contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="link__menu" type="button">Войти</button>
+        <div class="popup">
+            <a class="logo logo_popup" href="./index.html"><img src="./img/logo.svg" alt="Логотип университета Иннополис"></a>
+            <nav>
+                <ul>
+                    <li class="menu__list">
+                        <a class="menu__link menu__link__active" href="./index.html">Главная</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link" href="./student.html">Студенты</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link" href="./about.html">О курсе</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link" href="./contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="link__menu popup_button" type="button">Войти</button>
+        </div>
+    </header>
+    <section class="section">
+        <div class="modal">
+            <div class="modal__main">
+                <h2 class="modal__title">Войти на сайт</h2>
+                <form class="modal__form" action="#">
+                    <p class="modal__input">
+                        <input class="input__text" type="text" placeholder="Логин" required>
+                    </p>
+                    <p class="modal__input">
+                        <input class="input__text" type="password" placeholder="Пароль" required>
+                    </p>
+                    <button class="modal__button" type="button">Войти</button>
+                </form>
+                <button class="modal__close">&#10006;</button>
+            </div>
+        </div>
+    </section>
+    <main class="contacts">
+        <div class="content__contacts">
+            <h1 class="heading__contacts">Как нас найти 🗺️️</h1>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255709.91845402351!2d30.14323108083263!3d59.953151576090285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963110ebe9ea5b%3A0x86b0025c5a84a071!2z0JTQstC-0YDRhtC-0LLQsNGPINC_0LsuLCAyLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDAw!5e0!3m2!1sru!2sru!4v1676989475827!5m2!1sru!2sru"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="subtitle__contacts">
+                <h2 class="contacts__text">Наши контакты</h2>
+                <p class="adress">Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000</p>
+                <p class="phone">
+                    <a href=”tel:+78125555555”>Тел: +7 (812) 555-55-55</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">2023 &COPY;
+            <a class="footer__link" href="#">
+                <span class="footer__span">учебный центр</span>
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

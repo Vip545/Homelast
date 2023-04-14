@@ -1,0 +1,29 @@
+.content__about {
+    padding-left: calc(50% - 820px / 2);
+    padding-right: calc(50% - 820px / 2);
+  }
+  
+  .heading__about {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    color: #000000;
+    margin-top: 33px;
+  }
+  
+  .subtitle__about {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .content__video {
+    margin-bottom: 313px;
+  }
+  

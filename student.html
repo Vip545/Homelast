@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styles.css">
+    <script src="./scripts/script.js" defer></script>
+    <title>Главная</title>
+</head>
+<body>
+    <header class="header">
+        <div class="burger">
+            <span class="burger__line burger_line1"></span>
+            <span class="burger__line burger_line2"></span>
+            <span class="burger__line burger_line3"></span>
+        </div>  
+        <a class="logo" href="./index.html">
+            <img src="./img/logo.svg" alt="Логотип университета Иннополис">
+        </a>
+        <nav>
+            <ul class="menu">
+                <li class="menu__list">
+                    <a class="menu__link" href="./index.html">Главная</a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link menu__link__active" href="./student.html">Студенты</a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./about.html">О курсе</a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="link__menu" type="button">Войти</button>
+        <div class="popup">
+            <a class="logo logo_popup" href="./index.html">
+                <img src="./img/logo.svg" alt="Логотип университета Иннополис">
+            </a>
+            <nav>
+                <ul>
+                    <li class="menu__list">
+                        <a class="menu__link menu__link__active" href="./index.html">Главная</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link" href="./student.html">Студенты</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link" href="./about.html">О курсе</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link" href="./contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="link__menu popup_button" type="button">Войти</button>
+        </div>
+    </header>
+    <section class="section">
+        <div class="modal">
+            <div class="modal__main">
+                <h2 class="modal__title">Войти на сайт</h2>
+                <form class="modal__form" action="#">
+                    <p class="modal__input">
+                        <input class="input__text" type="text" placeholder="Логин" required>
+                    </p>
+                    <p class="modal__input">
+                        <input class="input__text" type="password" placeholder="Пароль" required>
+                    </p>
+                    <button class="modal__button" type="button">Войти</button>
+                </form>
+                <button class="modal__close">&#10006;</button>
+            </div>
+        </div>
+    </section>
+    <main class="content__student">
+        <h1 class="subtitle__student">Студенты потока 08.02.2020 👧👦</h1>
+        <div class="students">
+            <div class="student">
+                <img width="200" height="270" src="./img/student.jpg" alt="Фото студента">
+                <p class="student__text">Василий Иванов</p>
+            </div>
+            <div class="student">
+                <a target="_self" href="./portfolio.html">
+                    <img width="200" height="270" src="./img/potfolio.jpg" alt="Фото студента">
+                    <p class="student__text">Айрат Хамидуллин</p>
+                </a>
+                <p class="student__new">НОВИЧОК</p>
+            </div>
+            <div class="student">
+                <img width="200" height="270" src="./img/student.jpg" alt="Фото студента">
+                <p class="student__text">Мария Александрова</p>
+            </div>
+            <div class="student">
+                <img width="200" height="270" src="./img/student.jpg" alt="Фото студента">
+                <p class="student__text">Василий Иванов</p>
+            </div>
+            <div class="student">
+                <img width="200" height="270" src="./img/student.jpg" alt="Фото студента">
+                <p class="student__text">Василий Иванов</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">2023 &COPY;
+            <a class="footer__link" href="#">
+                <span class="footer__span">учебный центр</span>
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

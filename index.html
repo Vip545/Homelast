@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styles.css">
+    <script src="./scripts/script.js" defer></script>
+    <title>Главная</title>
+</head>
+<body>
+    <header class="header">
+        <div class="burger">
+            <span class="burger__line burger_line1"></span>
+            <span class="burger__line burger_line2"></span>
+            <span class="burger__line burger_line3"></span>
+        </div>  
+        <a class="logo" href="./index.html">
+            <img src="./img/logo.svg" alt="Логотип университета Иннополис">
+        </a>
+        <nav>
+            <ul class="menu">
+                <li class="menu__list">
+                    <a class="menu__link menu__link__active" href="./index.html">Главная</a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./student.html">Студенты</a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./about.html">О курсе</a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="link__menu" type="button">Войти</button>
+        <div class="popup">
+            <a class="logo logo_popup" href="./index.html">
+                <img src="./img/logo.svg" alt="Логотип университета Иннополис">
+            </a>
+            <nav>
+                <ul>
+                    <li class="menu__list">
+                        <a class="menu__link menu__link__active" href="./index.html">Главная</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link" href="./student.html">Студенты</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link" href="./about.html">О курсе</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link" href="./contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="link__menu popup_button" type="button">Войти</button>
+        </div>
+    </header>
+    <section class="section">
+        <div class="modal">
+            <div class="modal__main">
+                <h2 class="modal__title">Войти на сайт</h2>
+                <form class="modal__form" action="#">
+                    <p class="modal__input">
+                        <input class="input__text" type="text" placeholder="Логин" required>
+                    </p>
+                    <p class="modal__input">
+                        <input class="input__text" type="password" placeholder="Пароль" required>
+                    </p>
+                    <button class="modal__button" type="button">Войти</button>
+                </form>
+                <button class="modal__close">&#10006;</button>
+            </div>
+        </div>
+    </section>
+    <main class="content">
+        <h1 class="title">Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!</h1>
+        <img src="./img/classfoto.jpg" alt="Учебный класс университета Иннополис">
+        <div class="content__info">
+            <div class="content__section">
+                <div class="content__article">
+                    <h3 class="subtitle">Для кого этот курс</h3>
+                    <p class="about__text">Этот курс рассчитан на новичков, которые только начинают знакомство с
+                        веб-разработкой. В начале курса вы узнаете о том, как устроен Интернет и веб-сайты.
+                    <p class="about__text"> Для обучения необходимо только владеть компьютерной грамотностью
+                        (пользоваться браузером,
+                        создавать папки и файлы, устанавливать программы).
+                    </p>
+                </div>
+                <div class="content__article">
+                    <h3 class="subtitle">Чему вы научитесь</h3>
+                    <p class="about__text">На этом курсе вы узнаете, как устроены веб-сайты и как создавать их с нуля.
+                        Изучите основы языков <span class="span__about__text">HTML, CSS</span> и немного <span
+                            class="span__text">JavaScript</span>. Мы вместе сверстаем сайт нашей группы по этому макету.
+                        А затем вы <span class="span__myself">сами</span> сверстаете свои личные странички в качестве
+                        домашнего задания и мы выложим все это на сервер.</p>
+                </div>
+            </div>
+            <div class="content__heading">
+                <span class="first__char">“</span>
+                <p class="heading">Учимся вместе!</p>
+                <span class="last__char">”</span>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">2023 &COPY;
+            <a class="footer__link" href="#">
+                <span class="footer__span">учебный центр</span>
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
